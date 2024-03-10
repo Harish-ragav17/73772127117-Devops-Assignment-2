@@ -1,0 +1,17 @@
+---
+ - name: "Package Installation"
+   vars:
+    - username: "Harish"
+   hosts: localhost
+   tasks:
+    - name: "package installation"
+      apt:
+       name: tree
+       state: present
+    - name: "git installation"
+      apt: 
+       name: git
+       state: present
+    - name: "data"
+      debug:
+       msg: "Username: {{username}}" 

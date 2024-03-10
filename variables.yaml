@@ -1,0 +1,11 @@
+---
+ - name: "Varaibles"
+   hosts: localhost
+   vars:
+    - username: Harish
+    - home: /home/harish
+   tasks:
+    - name: Print variable
+      debug:
+       msg: "Username : {{username}}, Home path : {{home}}"
+

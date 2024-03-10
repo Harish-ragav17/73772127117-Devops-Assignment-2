@@ -1,0 +1,13 @@
+---
+- name: "play1"
+  hosts: localhost
+  tasks:
+   - name: "Create file"
+     file:
+      path: /home/osboxes/directory
+      state: directory
+   - name: "creating new file"
+     file: 
+      path: /home/osboxes/directory/demo.txt
+      state: touch
+      
